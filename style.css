@@ -1,0 +1,226 @@
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+.grid-container{
+    margin: auto;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px;
+    background-color: black;
+    padding: 10px;
+    gap: 5px;
+}
+
+.grid-container > div {
+    padding: 20px 0;
+}
+
+
+.grid-item1{
+    background-color: red;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.grid-item2{
+    background-color: orange;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.grid-item3{
+    background-color: green;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.grid-item4{
+    background-color: skyblue;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.grid-item5{
+    background-color: skyblue;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+
+
+.flex-container{
+    margin: auto;
+    width: 80%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icon,.text{
+    width: 100%;
+    margin: auto;
+}
+.innerbox{
+    padding: 50px 0;
+    width: 75%;
+    margin: auto;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 20px 0;
+    color: hsl(0, 0%, 95%);
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.flexbox1 button{
+    color: hsl(31, 77%, 52%);
+  }
+  .flexbox2 button{
+    color: hsl(184, 100%, 22%);
+  }
+  .flexbox3 button{
+    color: hsl(179, 100%, 13%);
+  }
+button{
+    width: 50%;
+    margin-top: 40px;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    padding: 12px 10px;
+    border-radius: 25px;
+    border-style: none;
+}
+button:hover{
+    cursor: pointer;
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+}
+.flexbox1{
+    background-color: hsl(31, 77%, 52%);
+    width: 33%;
+    border-radius: 10px 0 0 10px;
+}
+.flexbox2{
+    background-color: hsl(184, 100%, 22%);
+    width: 33%;
+}
+.flexbox3{
+    background-color: hsl(179, 100%, 13%);
+    width: 33%;
+    border-radius: 0 10px 10px 0;
+}
+footer{
+    width: fit-content;
+    margin: auto;
+  }
+  footer>p{
+    color: black;
+  }
+  a{
+    color: hsl(31, 77%, 52%);
+    text-decoration: none;
+    
+  }
+  a:hover{
+    cursor: pointer;
+    color: hsl(179, 100%, 13%);
+  }
+
+@media screen and (max-width:1300px){
+    .flex-container{
+        width: 90%;
+    }
+}
+@media screen and (max-width:1150px){
+    .flex-container{
+        width: 99%;
+        padding: 20px 0;
+    }
+    button{
+        width: 60%;
+    }
+}
+@media screen and (max-width:1050px){
+    p, button{
+        font-size: 13px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    
+}
+@media screen and (max-width:930px){
+    .innerbox{
+        width: 84%;
+    }
+}
+@media screen and (max-width:835px){
+    p, button{
+        font-size: 12px;
+    }
+}
+    @media screen and (max-width:785px){
+        .flex-container{
+            width: 100%;
+            flex-direction: column;
+            padding: 0;
+        }
+        .flexbox1,.flexbox2,.flexbox3{
+            margin: auto;
+            width: 100%;
+            border-radius: 0;
+        }
+        p, button{
+            font-size: 15px;
+        }
+        h1{
+            font-size: 40px;
+        }
+        button{
+            width: 40%;
+        }
+    }
+    @media screen and (max-width:500px){
+        button{
+            width: 50%;
+        }
+    }
